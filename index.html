@@ -127,7 +127,7 @@
       </section>
 
         <!-- Team Section  -->
-       <section class="team section">
+       <section class="team-section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list" role="list"> 
@@ -397,7 +397,7 @@
       </section> 
 
       <!-- 4 section Our Portfolio  -->
-       <!-- <section class="hidden-portfolio-section">
+       <section class="hidden-portfolio-section">
         <div class="container">
           <h2 class="title-section">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -521,16 +521,16 @@
           </ul>
         </div>
       </section>
-    </main> --> 
-    
+    </main> 
+     
 
     <!--Footer-->
-    <!-- <footer class="hidden-page-footer">
-      <div class="container">
+    <footer class="hidden-page-footer">
+      <div class="footer-container">
 
       <div class="footer-logo-wrapper">
-        <a class="logo footer-logo" href="./index.html"
-          >Web<span class="logo-part">Studio</span>
+        <a class="footer-logo" href="./index.html"
+          >Web<span class="footer-logo-part">Studio</span>
         </a>
         <p class="footer-text">
           Increase the flow of customers and sales for your business with
@@ -569,10 +569,10 @@
             </a>
           </li>
         </ul>
-        </div> -->
+        </div> 
 
         <!--Subscribe form-->
-<!-- <div class="footer-subscribe">
+ <div class="footer-subscribe">
   <p class="footer-title">Subscribe</p>
   <form class="subscribe-form" name="subscribe">
     <label class="subscribe-label">
@@ -584,25 +584,90 @@
       </svg>
     </button>
   </form>
-</div> -->
-      <!-- </div>
-    </footer> -->
+</div> 
+
+ <!-- Mobile menu-->
+   <div class="mobile-menu is-open">
+      <div class="container mobile-menu-container">
+        <button type="button" class="mobile-menu-close-btn">
+          <svg class="mobile-menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-nav-list">
+          <li class="mobile-menu-nav-list-item">
+            <a class="mobile-menu-nav-list-link" href="">Studio</a>
+          </li>
+          <li class="mobile-menu-nav-list-item">
+            <a class="mobile-menu-nav-list-link" href="">Portfolio</a>
+          </li>
+          <li class="mobile-menu-nav-list-item">
+            <a class="mobile-menu-nav-list-link" href="">Contacts</a>
+          </li>
+        </ul>
+        <address class="menu-address">
+          <ul class="menu-address-list">
+            <li class="menu-address-list-item">
+              <a
+                class="menu-address-list-link link-tel"
+                href="tel:+110001111111"
+                >+11 (000) 111-11-11</a>
+            </li>
+            <li class="menu-address-list-item">
+              <a class="menu-address-list-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a>
+            </li>
+          </ul>
+        </address>
+         <ul class="mobile-menu-icon-list">
+          <li class="mobile-menu-icon-item">
+            <a class="mobile-menu-icon-link" href="#" aria-label="Instagram">
+              <svg class="mobile-menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-icon-item">
+            <a class="mobile-menu-icon-link" href="#" aria-label="Twitter">
+              <svg class="mobile-menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-icon-item">
+            <a class="mobile-menu-icon-link" href="#" aria-label="Facebook">
+              <svg class="mobile-menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-icon-item">
+            <a class="mobile-menu-icon-link" href="#" aria-label="LinkedIn">
+              <svg class="mobile-menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </footer> 
 
     <!--Modal  "backdrop is-open" для відображення-->
 
-    <!-- <div class="backdrop is-hidden" id="modal-backdrop">
+    <div class="backdrop is-hidden" id="modal-backdrop">
       <div class="modal">
         <button type="button" class="modal-close" aria-label="Close modal">
           <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
-        </button> -->
+        </button> 
                      <!--Заголовок-->        
-        <!-- <p class="modal-title">Leave your contacts and we will call you back</p> -->
+        <p class="modal-title">Leave your contacts and we will call you back</p>
                       <!--Форма-->
-        <!-- <form class="modal-form"> -->
+        <form class="modal-form">
                       <!--Name-->
-          <!-- <div class="form-field">
+          <div class="form-field">
             <label for="user-name" class="form-label">Name</label>
             <div class="form-input-wrapper">
               <input type="text" id="user-name" name="user-name" class="form-input" />
@@ -610,9 +675,9 @@
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
-          </div> -->
+          </div>
                   <!--Phone-->
-          <!-- <div class="form-field">
+          <div class="form-field">
             <label for="user-phone" class="form-label">Phone</label>
             <div class="form-input-wrapper">
               <input type="tel" id="user-phone" name="user-phone" class="form-input" />
@@ -620,9 +685,9 @@
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
-          </div> -->
+          </div> 
                <!--Email-->
-          <!-- <div class="form-field">
+          <div class="form-field">
             <label for="user-email" class="form-label">Email</label>
             <div class="form-input-wrapper">
               <input type="email" id="user-email" name="user-email" class="form-input" />
@@ -630,14 +695,14 @@
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
-          </div> -->
+          </div> 
                   <!--Comment-->
-          <!-- <div class="form-field">
+          <div class="form-field">
             <label for="user-comment" class="form-label">Comment</label>
             <textarea id="user-comment" name="user-comment" class="form-textarea" placeholder="Text input"></textarea>
-          </div> -->
+          </div> 
                    <!--Chekbox-->
-          <!-- <div class="form-checkbox-wrapper">
+          <div class="form-checkbox-wrapper">
             <input type="checkbox" id="user-privacy" name="user-privacy" class="form-checkbox visually-hidden" value="true" />
             <label for="user-privacy" class="form-checkbox-label">
               <span class="custom-checkbox"> 
@@ -645,13 +710,17 @@
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
               </span>
+
+              <!-- ? "span" -->
+               <span class="checkbox-accept">
             I accept the terms and conditions of the <a href="#" class="form-policy-link">Privacy Policy</a> 
-            </label>
-          </div> -->
+            </span>
+          </label>
+          </div> 
                  <!--Submit-->
-          <!--<button type="submit" class="form-submit-btn">Send</button> -->
-        <!-- </form>
+          <button type="submit" class="form-submit-btn">Send</button> 
+        </form>
       </div>
     </div>
   </body>
-</html> -->
+</html> 
